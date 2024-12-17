@@ -25,6 +25,6 @@
     },
     "devDependencies": {
         "@mpietrucha/prettier-config": "^0.0.12",
-        "unbuild": "^2.0.0"
+        "unbuild": "^3.0.1"
     }
 }
