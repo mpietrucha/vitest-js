@@ -1,7 +1,12 @@
 import useUtls from '@composables/useUtils'
-import useVitest from '@composables/useVitest'
+import useVitest, {
+    useDescribe,
+    useExpect,
+    useIt,
+    useTest,
+} from '@composables/useVitest'
 
-export { useUtls }
+export { useUtls, useVitest }
 
 export const it = useIt()
 

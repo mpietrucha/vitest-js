@@ -1,4 +1,4 @@
-import { expect, describe, it, test } from 'vitest'
+import { describe, expect, it, test } from 'vitest'
 
 export const useIt = (fixtures = {}) => {
     return it.extend(fixtures)
