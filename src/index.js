@@ -1,4 +1,3 @@
-import useUtls from '@composables/useUtils'
 import useVitest, {
     useDescribe,
     useExpect,
@@ -6,7 +5,7 @@ import useVitest, {
     useTest,
 } from '@composables/useVitest'
 
-export { useUtls, useVitest }
+export { useVitest }
 
 export const it = useIt()
 
@@ -16,10 +15,10 @@ export const expect = useExpect()
 
 export const describe = useDescribe()
 
-export default ({ fixtures } = {}) => {
+export default ({ fixtures = {} } = {}) => {
     const it = useIt(fixtures)
 
     const test = useTest(fixtures)
 
-    return { it, test, expect, describe }
+    return { describe, expect, it, test }
 }

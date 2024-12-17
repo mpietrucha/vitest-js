@@ -1,7 +1,4 @@
 import { describe, expect, it, test } from 'vitest'
-import { defineConfig } from 'vitest/config'
-
-export const useConfig = defineConfig
 
 export const useIt = (fixtures = {}) => {
     return it.extend(fixtures)
@@ -22,7 +19,6 @@ export const useDescribe = () => {
 export default () => ({
     useIt,
     useTest,
-    useConfig,
     useExpect,
     useDescribe,
 })
